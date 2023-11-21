@@ -1,0 +1,37 @@
+<meta charset="utf-8" />
+
+{% extends "app/layout.html" %}
+{% load static %}
+{% block content %}
+
+<div class="jumbotron">
+    <h1>Dota2</h1>
+    <p class="lead">Этот сайт предоставляет информацию о героях, предметах и последних обновлениях игры DOTA 2</p>
+    <p><a href="https://ru.wikipedia.org/wiki/Dota_2" class="btn btn-primary btn-large">Подробнее &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>ГЕРОИ</h2>
+        <p>
+            Здесь будут перечислены все герои Dota 2, также можно их сортировать по роли и основному атрибуту.
+        </p>
+        <p><a class="btn btn-default" href="https://dota2.ru/heroes/">Подробнее &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>ПРЕДМЕТЫ</h2>
+        <p>
+            На данной странице вы найдете все предметы Dota 2.
+            Все картинки кликабельны, нажав на картинку вы перейдете в описание данного предмета,
+            где вы узнаете о предмете, что он дает и многое другое.
+        </p>
+        <p><a class="btn btn-default" href="http://www.dota2valve.ru/items">Подробнее &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>ОБНОВЛЕНИЯ</h2>
+        <p>Описание изменений в последних обновлениях.</p>
+        <p><a class="btn btn-default" href="https://www.dota2.com/patches/">Подробнее &raquo;</a></p>
+    </div>
+</div>
+
+{% endblock %}
